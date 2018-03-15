@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    
+}
+
+.wraper{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.menu_bar{
+  
+    min-height: 50px;
+    background-color: black;
+    
+    
+}
+
+.menu_bar ul{
+    list-style: none;
+    
+}
+
+.menu_bar ul li{
+   float: left;
+   position: relative;
+   width: 110px;
+}
+
+.menu_bar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 1s;
+    padding: 15px 4px;
+    text-align: center;
+    font-size: 16px;
+    border-right: 1px solid white;
+    
+}
+
+.menu_bar ul li:last-child a{ 
+    border-right: none;
+}
+
+.menu_bar ul li a:hover{
+    background-color: orange;
+    transform: scale(1.1);
+    color: black;
+    font-weight: bold;
+    
+}
+
+/*Drop down*/
+.menu_bar ul li ul{
+    background-color: black;
+    min-height: 14px;
+    position: absolute;
+    left: -999999px;
+    
+}
+
+.menu_bar ul li:hover > ul{
+    left: 0px;
+}
+
+.menu_bar ul li ul li{
+    clear: both;
+    
+}
+.menu_bar ul li ul li a{
+    border-right: none;
+    border-bottom: 1px solid white;
+    width: 102px;
+    text-align: center;
+    
+    
+}
+.menu_bar ul li ul li:hover a{
+    
+}
+
+
+/*multiple*/
+
+.menu_bar ul ul ul{
+           margin-left: 110px;
+           top: 0px;
+           position: absolute;
+}
+
+.menu_bar ul ul ul li{
+    clear: both;
+    
+}
+
+.menu_bar ul ul ul li a{
+    border-bottom: 1px solid white;
+    width: 102px;
+    text-align: center;
+}
+
+
